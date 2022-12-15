@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        //Check Armstrong Number
+
+        function countVowels() {
+            var inputSTR = document.getElementById("strInput").value;
+            var vowel = new Map([
+                ["a", 0],
+                ["e", 0],
+                ["i", 0],
+                ["o", 0],
+                ["u", 0]
+            ]);
+            for (let i = 0; i < inputSTR.length; i++) {
+                let char = inputSTR[i];
+                if (vowel.has(char)) {
+                    //alert(`${inputSTR[i]} exist`);
+                    //break;
+                    vowel.set(char, vowel.get(char) + 1);
+                }
+            }
+            document.getElementById("ACount").innerHTML = vowel.get("a")
+            document.getElementById("ECount").innerHTML = vowel.get("e")
+            document.getElementById("ICount").innerHTML = vowel.get("i")
+            document.getElementById("OCount").innerHTML = vowel.get("o")
+            document.getElementById("UCount").innerHTML = vowel.get("u")
+
+            
+        }
+
+
+    </script>
+    <title>Fourth Task </title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Fourth task</h3>
+    <p>Count the Each Vowel in String given by User.</p>
+    <hr>
+    <div>
+        <label>&nbsp;&nbsp;Enter the string &nbsp;</label>
+        <input type="text" name="strInput" id="strInput">
+        <br><br><br>
+        <button onclick="countVowels()">Count Vowels</button>
+        <br><br><br>
+        <table>
+            <tr>
+                <th>
+                    Vowel
+                </th>
+                <th>
+                    Count
+                </th>
+            </tr>
+            </header>
+
+            <tr>
+                <td>
+                    A
+                </td>
+                <td id="ACount">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E
+                </td>
+                <td id="ECount">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    I
+                </td>
+                <td id="ICount">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    O
+                </td>
+                <td id="OCount">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    U
+                </td>
+                <td id="UCount">
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <script>
+            //function to check whether Number is Prime or not
+            
+            function isPrime(d){
+                let prime = true;
+                for(let i=2;i<Math.sqrt(d);i++){
+                    if(d%i==0){
+                        prime=false;
+                        break;
+
+                    }
+                }
+                return prime;
+            }
+            
+            //function Print Prime till 100             
+            function printPrime100(){
+                strPrime =' ';
+                for(let i = 2;i<100;i++){
+                   
+                    if(isPrime(i)){
+                        strPrime = strPrime + i +', ';
+                    }
+                }
+                return strPrime;
+            }
+            console.log("Prime Numbers upto 100 are : "+printPrime100());
+        
+       </script>
+       <title>Second Task</title>
+    </head>
+    
+    <body>
+        <h3>Second Task</h3>
+        <p>Write a Javascript program to display all the prime numbers between 1 to 100</p>
+        
+    </body>
+</html>

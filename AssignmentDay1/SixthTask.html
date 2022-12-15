@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <script>
+            //Print Prime Number
+
+            function printPrime(){
+                var str=''; 
+                for(let i=2;i<1000;i++){
+                    if(isPrime(i)){
+                        let num2 = i;
+                        let sum=0;
+                        while(num2!=0){
+                            sum += num2%10;
+                            num2=parseInt(num2/10);
+                        }
+                        //alert(sum);
+                        if(isPrime(sum)){
+                            str+=i+', ';
+                        }
+                    }
+                }
+                document.getElementById("pId").innerHTML =str;                
+            }
+            //function checks Prime
+            function isPrime(num){
+                for(let i=2;i<=Math.sqrt(num);i++){
+                    if(num%i==0){
+                        return false;
+                    }
+                }
+                return true;
+            } 
+
+        
+       </script>
+       <title>Sixth Task    </title>
+
+    </head>
+    
+    <body>
+        <h3>Sixth task</h3>
+        <p> print all the numbers between 1-1000 the sum of whose sum digits is also prime.</p>
+        <hr>
+        <div>
+            <br><br>
+            <button onclick="printPrime()">Print Prime</button>
+            <br><br>
+            <p id="pId"></p>
+        </div>
+    </body>
+</html>

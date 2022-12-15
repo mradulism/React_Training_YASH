@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        //Check Armstrong Number
+
+        function sumInputs() {
+            var first = parseInt(document.getElementById("firstInput").value);
+            var second = parseInt(document.getElementById("secondInput").value);
+            let sum = first+second;
+            alert(`Sum is ${sum}`);    
+        }
+
+
+    </script>
+    <title>Fifth Task </title>
+    
+</head>
+
+<body>
+    <h3>Fifth task</h3>
+    <p>Display the sum of two numbers entered by user </p>
+    <hr>
+    <div>
+        <label>&nbsp;&nbsp;Enter the First Number &nbsp;</label>
+        <input type="text" name="firstInput" id="firstInput">
+        <br>
+        <hr>
+        <br>
+        <label>&nbsp;&nbsp;Enter the Second Number &nbsp;</label>
+        <input type="text" name="secondInput" id="secondInput">
+        <br>
+        <hr>
+        <br>
+        <button onclick="sumInputs()">Sum</button>
+        <br><br><br>
+
+</body>
+</html>

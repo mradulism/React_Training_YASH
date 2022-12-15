@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <script>
+            //Check Armstrong Number
+
+            function checkArmstrong(){
+                var inputNum = document.getElementById("armsInput").value;
+                var TEMPinputNum = parseInt(document.getElementById("armsInput").value);
+                let sum =0 ;
+                for(let i=0;i<inputNum.length;i++){
+                    let digit = parseInt(inputNum[i]);
+                    sum += Math.pow(digit,inputNum.length);
+                }
+                if(sum==TEMPinputNum){
+                 alert(inputNum +" is an Armstrong Number");
+                }
+                else{
+                    alert(inputNum +" is NOT Armstrong Number");
+                }
+            } 
+
+        
+       </script>
+       <title>Third Task    </title>
+    </head>
+    
+    <body>
+        <h3>Third task</h3>
+        <p>Check if the number entered by the user is an Armstrong number or not.
+        </p>
+        <hr>
+        <div>
+            <label>&nbsp;&nbsp;Enter the Number &nbsp;</label>
+            <input type="number" name="armsInput" id="armsInput">
+            <br><br><br>
+            <button onclick="checkArmstrong()">Check Armstrong</button>
+        </div>
+    </body>
+</html>
