@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "id": 1001,
+      "username": "mradul",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "id": 1002,
+      "username": "aman",
+      "password": "12345",
+      "role": "user"
+    },
+    {
+      "id": 1003,
+      "username": "aditi",
+      "password": "abc",
+      "role": "user"
+    },
+    {
+      "id": 1004,
+      "username": "utkarsh",
+      "password": "up",
+      "role": "user"
+    }
+  ],
+  "addedDefects": [
+    {
+      "id": 5001,
+      "userId": 1002,
+      "defectCategory": "Functional",
+      "defectPriority": 1,
+      "description": "decriprtion",
+      "status": "open"
+    },
+    {
+      "id": 5002,
+      "userId": 1002,
+      "defectCategory": "Functional",
+      "defectPriority": 1,
+      "description": "decriprtion 123 ",
+      "status": "open"
+    },
+    {
+      "id": 5003,
+      "userId": 1002,
+      "defectCategory": "Change Request",
+      "defectPriority": 3,
+      "description": "decriprtion 1233344",
+      "status": "open"
+    },
+    {
+      "id": 5004,
+      "userId": 1002,
+      "defectCategory": "other",
+      "defectPriority": 4,
+      "description": "decriprtion others",
+      "status": "open"
+    },
+    {
+      "id": 5005,
+      "userId": 1003,
+      "defectCategory": "Other",
+      "defectPriority": 4,
+      "description": "Aditi decriprtion",
+      "status": "open"
+    },
+    {
+      "id": 5006,
+      "userId": 1002,
+      "defectCategory": "UI",
+      "defectPriority": 2,
+      "description": "Aditi UI decriprtion",
+      "status": "open"
+    },
+    {
+      "id": 5007,
+      "userId": 1004,
+      "defectCategory": "Change Request",
+      "defectPriority": 3,
+      "description": "Utkarsh decriprtion",
+      "status": "open"
+    },
+    {
+      "id": 5008,
+      "userId": 1003,
+      "defectCategory": "UI",
+      "defectPriority": 1,
+      "description": "Aditi 2nd decriprtion",
+      "status": "open"
+    },
+    {
+      "id": 5009,
+      "userId": 1003,
+      "defectCategory": "Change Request",
+      "defectPriority": 3,
+      "description": "Aditi 4th decriprtion",
+      "status": "open"
+    },
+    {
+      "id": 5010,
+      "userId": 1003,
+      "defectCategory": "Functional",
+      "defectPriority": 2,
+      "description": "Aditi 3nd decriprtion",
+      "status": "open"
+    }
+  ]
+}

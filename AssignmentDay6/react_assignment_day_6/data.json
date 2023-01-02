@@ -1,0 +1,46 @@
+{
+  "books": [
+    {
+      "title": "Ducks on Road",
+      "Author": "Donald Ducks",
+      "genre": "comedy",
+      "summary": "Biography of Donal Duck",
+      "id": 1001
+    },
+    {
+      "title": "Accidental PM",
+      "Author": "R.R. Khandelwal",
+      "genre": "Thriller",
+      "summary": "Biography of PM",
+      "id": 1002
+    },
+    {
+      "title": "qwerty",
+      "Author": "qwertyu",
+      "genre": "romance",
+      "summary": "wertyuio",
+      "id": 1003
+    },
+    {
+      "title": "qwerty",
+      "Author": "qwertyu",
+      "genre": "romance",
+      "summary": "wertyuio",
+      "id": 1004
+    },
+    {
+      "title": "ASDFGH",
+      "Author": "qwertyu ertyu",
+      "genre": "crime",
+      "summary": "wdfghvbn",
+      "id": 1005
+    },
+    {
+      "title": "Twilight",
+      "Author": "Stephenie",
+      "genre": "romance",
+      "summary": "A love story",
+      "id": 1006
+    }
+  ]
+}
